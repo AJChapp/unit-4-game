@@ -1,0 +1,154 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+    background-image: url(../images/spacey.jpg);
+    background-size: 100%;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+#title{
+    color: white;
+    text-align: center;
+}
+
+#audioBtns{
+    float: left;
+    position: absolute;
+    right: 0px;
+}
+
+#charSelect{
+    color: white;
+}
+
+.selectBtns{
+    font-size: 10px;
+}
+
+.leaderPic{
+    width: 150px;
+    height: 200px;
+}
+
+.commander{
+    float: left;
+    margin: 10px;
+    border: 5px solid;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.choice{
+    position: absolute;
+    left: -5px;
+    border: none;
+    margin: 0px;
+    
+}
+
+#zannChoice{
+    background-color: #ECA60F;
+}
+#thrawnChoice{
+    background-color: #264592;
+}
+#ackbarChoice{
+    background-color: #ED1B24;
+}
+
+#thrawn{
+    border-color: #264592;
+    background-color: #264592;
+}
+
+#ackbar{
+    border-color: #ED1B24;
+    background-color: #ED1B24;
+}
+
+#zann{
+    border-color: #ECA60F;  
+    background-color: #ECA60F;
+}
+
+.leaderText{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#zannText{
+    background-color: #ECA60F;
+}
+
+#ackbarText{
+    background-color: #ED1B24;
+}
+
+#thrawnText{
+    background-color: #264592;
+    color: white;
+}
+
+.hp{
+    font-size: 10px;
+}
+
+#battleField{
+    background-color:rgb(56, 56, 56);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 250px;
+}
+
+#battlePlayer{
+    float: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#playerHp{
+    position: absolute;
+    width: 100%;
+    background-color: green;
+}
+#enemyHp{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(224, 86, 86);
+}
+
+#battleEnemy{
+background-color: red;
+    float: left;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: #ED1B24, solid, 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#battleLog{
+    background-color: white;
+    color: black;
+}

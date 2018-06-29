@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Game</title>
+    <!-- css reset ↓ -->
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/Normalize.css">
+    
+    <!-- bootstrap ↓ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- google font↓ -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!-- css ↓ -->
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+    
+    
+    <!-- jquery ↓ -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous" defer></script>
+      <!-- bootstrap js ↓ -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous" defer></script>   
+      <!-- my js ↓ -->
+      <script src="./assets/JS/javascript.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid" id="title">
+        <H1>Star Wars Empire at War</H1>
+        <h2>Battle for the Eclipse</h2>
+
+        <!-- <div id="audioBtns">
+            <button class="audioBtn">Stop Sound</button>
+        </div> -->
+    </div>
+
+
+
+    <div class="container" id="charSelect">
+        <h3>Choose Your Commander</h3>
+        <div id="selectBtnsDiv">
+            <button class="selectBtns" id="leaderChoice">Choose Your Leader</button>
+            <button class="selectBtns" id="enemyChoice">Choose Your Opponent</button>
+            <button class="selectBtns" id="reset">Reset</button>
+        </div>
+
+
+        <div class="commander" id="zann">
+            <div id="zannNoBtn">
+                <img class="leaderPic" src="./assets/images/zann.jpg" alt="Tyber Zann">
+                <div class="leaderText" id="zannText">
+                    <h6>Tyber Zann</h6>
+
+                </div>
+            </div>
+                
+            <button class="btn btn-warning choice" id="zannChoice">Click to Choose</button>
+            
+        </div>
+
+
+        <div class="commander" id="ackbar">
+            <div id="ackbarNoBtn">
+
+                <img class="leaderPic" src="./assets/images/admiral_ackbar_by_icarus126.jpg" alt="Gial Ackbar">
+                <div class="leaderText" id="ackbarText">
+                    <h6>Gial Ackbar</h6>
+                </div>
+            </div>
+
+            <button class="btn btn-danger choice" id="ackbarChoice">Click to Choose</button>
+       
+        </div>
+        
+
+        <div class="commander" id="thrawn">
+            <div id="thrawnNoBtn">
+            <img class="leaderPic" src="./assets/images/thrawn.jpg" alt="Thrawn">
+            <div class="leaderText" id="thrawnText">
+                <h6>Thrawn</h6>
+            </div>
+        </div>
+
+        <button class="btn btn-primary choice" id="thrawnChoice">Click to Choose</button>
+        
+        </div>
+
+    </div>
+
+
+
+<div class="container-fluid clearfix row" id="battleField">
+    <div id="actionBtns">
+        <button class="actionBtn" id="attack">Attack!</button>
+    </div>
+    <div id="battlePlayer">
+
+
+        
+    </div>
+    <div id="battleEnemy">
+        
+
+    </div>
+    
+</div>
+
+
+<div class="container row" id="battleLog"></div>
+
+</body>
+
+</html>
+<!-- possible updates -->
+<!-- play audio clip  when u pick a leader -->
+<!-- play duel of fates while fighting -->
+<!-- voctroy music -->
