@@ -111,6 +111,11 @@ var attackPlayer = function(){
         enemy.hp = enemy.hp - player.attackPower
         player.attackPower=player.attackPower+20    
         $("#enemyHp").text(enemy.hp);
+        if(enemy.hp<1){
+            enemy=0;
+            $("#battleEnemy").empty();
+            alert('You Win!')
+        }
         
     }
 }
@@ -124,20 +129,16 @@ var attackEnemy = function(){
     else{
         player.hp = player.hp - enemy.attackPower
         $("#playerHp").text(player.hp);
+        if(player.hp<1){
+            alert('You Lose')
+        }
     }
 }
 
 var combat = function(){
-    if(player.hp<1){
-        alert('You Died')
-    }
-    else if(enemy.hp<1){
-        alert('Enemy is Dead')
-    }
-    else{
+
         attackPlayer();
         attackEnemy();
-    }
 }
 
 $("#leaderChoice").on('click', function(){
